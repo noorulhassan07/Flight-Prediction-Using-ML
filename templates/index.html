@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Delay Predictor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="banner">
+        <marquee behavior="scroll" direction="left">✈ Predict Your Flight — Will it be Delayed or Not?</marquee>
+    </div>
+    <div class="form-container">
+        <h2>Flight Delay Predictor</h2>
+        <form action="/predict" method="post">
+            <input type="text" name="carrier" placeholder="Carrier Code (e.g. UA)" required>
+            <input type="text" name="origin" placeholder="Origin Code (e.g. JFK)" required>
+            <input type="text" name="dest" placeholder="Destination Code (e.g. LAX)" required>
+            <input type="number" name="dep_time" placeholder="Scheduled Departure Hour (0–23)" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
